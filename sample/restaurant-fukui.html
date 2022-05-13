@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+  <title>福井レストランマップ（出展: 食品衛生公開[オープンデータ閲覧]）</title>
+  </head><body>
+  
+  <h1>福井レストランマップ（出展: 食品衛生公開[オープンデータ閲覧]）</h1>
+  
+  <script type="module" src="https://code4fukui.github.io/csv-map/csv-map.js"></script>
+  <csv-map src=./restaurant-fukui.csv useimage=false xgrayscale=grayscale></csv-map>
+  
+  <script type="module" src="https://code4sabae.github.io/js/csv-viewer.js"></script>
+  <csv-viewer name="食品衛生公開[オープンデータ閲覧] 福井県 ＆ 営業の種類＝① 飲食店営業" src=./restaurant-fukui.csv embedimage=false></csv-viewer>
+  
+  出展: <a href=https://ifas.mhlw.go.jp/faspub/IO_S011001.do?_Action_=a_backAction>食品衛生公開[オープンデータ閲覧]</a><br>
+  <a href=https://github.com/code4fukui/food-japan>src on GitHub by Code for FUKUI</a><br>
+  
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    margin: .2em;
+  }
+  csv-map > div {
+    width: 100%;
+    height: 70vh !important;
+  }
+  csv-viewer table, csv-viewer {
+    margin: .5em;
+  }
+  csv-viewer table {
+    border-collapse: collapse;
+  }
+  csv-viewer td, csv-viewer th {
+    border: 1px solid black;
+    white-space: nowrap;
+    height: 1em;
+    padding: .3em;
+  }
+  </style>
+  
