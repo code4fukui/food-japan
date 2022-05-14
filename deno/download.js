@@ -20,7 +20,6 @@ if (!lastUpdate) {
   console.log("err lastUpdate is null");
   Deno.exit(1);
 }
-/*
 
 try {
   await Deno.mkdir("../data/latest", { recursive: true });
@@ -29,7 +28,7 @@ try {
   console.log("data already downloaded");
   Deno.exit(0);
 }
-*/
+
 const codes = ArrayUtil.toUnique(dom.querySelectorAll("form .action a").map(a => a.getAttribute("id")).map(id => id.substring(id.length - 5)));
 console.log(codes);
 
@@ -39,14 +38,14 @@ const fetchData = async (code) => {
   //console.log(txt);
   return txt;
 };
-/*
+
 for (const code of codes) {
   console.log(code);
   const csv = await fetchData(code);
   await Deno.writeTextFile("../data/" + lastUpdate + "/" + code + "_food_business_all.csv", csv);
   await Deno.writeTextFile("../data/latest/" + code + "_food_business_all.csv", csv);
 }
-*/
+
 const lgcodes = CSV.toJSON(await CSV.fetch("https://code4fukui.github.io/address-japan/data/lgcode.csv"));
 
 const codecsv = CSV.stringify(codes.map(code => {
