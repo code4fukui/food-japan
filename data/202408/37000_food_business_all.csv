@@ -1,0 +1,277 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>食品衛生申請等システム[クライアントエラー]</title>
+  <link rel="stylesheet" type="text/css" href="/faspub/style/jquery/ui/jquery-ui.min.css?d=1724649249867">
+  <link rel="stylesheet" type="text/css" href="/faspub/style/jquery/ui/jquery-ui.structure.min.css?d=1724649249867">
+  <link rel="stylesheet" type="text/css" href="/faspub/style/jquery/ui/jquery-ui.theme.min.css?d=1724649249867">
+  <link rel="stylesheet" type="text/css" href="/faspub/style/global.css?d=1724649249867">
+  <link rel="stylesheet" type="text/css" href="/faspub/style/body_global.css?d=1724649249867">
+  <link rel="stylesheet" type="text/css" href="/faspub/style/fontawesome/css/font-awesome.min.css?d=1724649249867">
+  <link rel="stylesheet" type="text/css" href="/faspub/style/_global_user.css?d=1724649249867">
+  
+<script type="text/javascript">
+<!--
+	var _globalMsgObject =
+	{
+		"doRedraw" : "フィールド更新中..." ,
+		"createRequest" : "XMLHttpRequestが作成できません。" ,
+		"serverError" : "サーバーでエラーが発生しました。" ,
+		"sending" : "送信中..." ,
+		"nowSending" : "送信中です" ,
+		"sendError" : "送信時にエラーが発生しました。" ,
+		"chgReset" : "変更された項目があります。変更を破棄しますか？" ,
+		"checking" : "チェック中..." ,
+		"needInfoPrint" : "印刷に関する情報が不足しています。" ,
+		"needInfoLink" : "リンクに関する情報が不足しています。" ,
+		"buildSuggest" : "入力補完候補構築中..." ,
+		"getSuggest" : "入力補完候補取得中..." ,
+		"suggestLimitMsg" : "and more...",
+		"selectInsertLocation" : "挿入位置を選択してください。",
+		"inputhistoryReset" : "入力履歴を初期化しました。",
+		"askingFailServerError" : "サーバーでエラーが発生しました。",
+		"askingFail" : "メッセージの送信に失敗しました。",
+		"trashViewTitle" : "会話履歴削除",
+		"resetHistoryTitle" : "入力履歴初期化",
+		"windowMinimizeTitle" : "最小化",
+		"retypeMessage" : "メッセージを入力してください"
+	};
+//-->
+</script>
+
+  <script src="/faspub/script/global.js?d=1724649249867" charset="UTF-8"></script>
+  <script src="/faspub/script/jquery/jquery-1.8.2.min.js?d=1724649249867" charset="UTF-8"></script>
+  <script src="/faspub/script/jquery/ui/jquery-ui.min.js?d=1724649249867" charset="UTF-8"></script>
+  <script>
+//<![CDATA[
+  function changeDisplay(elementId) {
+    if (document.getElementById(elementId)) {
+      if (document.getElementById(elementId+'-show').style.display != 'none') {
+        document.getElementById(elementId+'-show').style.display = 'none';
+        document.getElementById(elementId+'-hide').style.display = 'inline';
+        document.getElementById(elementId).style.display = 'block';
+      } else {
+        document.getElementById(elementId+'-show').style.display = 'inline';
+        document.getElementById(elementId+'-hide').style.display = 'none';
+        document.getElementById(elementId).style.display = 'none';
+      }
+    }
+  }
+//]]>
+</script>
+</head>
+<body id="_ui_body" style="min-height:600px; height: calc(100vh - 240px);">
+<header>
+  <div class="headerMain">
+    <div class="headerMain__inner">
+      <div class="headerMain__left">
+        <h1 class="headerLogo">
+          <a href="https://www.mhlw.go.jp/" target="_blank"><img src="/faspub/image/mhlw_logo_head.png" alt="厚生労働省"></a>
+        </h1>
+      </div>
+      <div class="headerMain__right">
+        <div class="headerUtil__support">
+          <ul class="headerLink">
+            <li><a href="#_message" class="headerLink--main js-scroll" data-id="#_message">本文へ</a></li>
+          </ul>
+          <dl class="headerUtil__fontsize">
+            <dt>文字サイズの変更</dt>
+                <dd><a href="#" class="js-fontAdjust is-current" data-size="m">標準</a></dd>
+                <dd><a href="#" class="js-fontAdjust" data-size="l">大</a></dd>
+                <dd><a href="#" class="js-fontAdjust" data-size="xl">特大</a></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</header>
+<section id="container">
+  <h1 class="title">お探しのページが見つかりませんでした。</h1>
+
+
+
+
+
+
+<div id="_message">
+
+</div>
+
+
+  <div class="_ui_form">
+    <div id="_message"></div>
+    <table>
+      <tr style="height:100%">
+        <td>
+          <table class="article">
+            <tr>
+              <td colspan="1" rowspan="1">
+                <div id="_description_str_item" style="">
+                  <div class="field field__DESCRIPTION all__DESCRIPTION item__DESCRIPTION o-field" title="" id="sidDESCRIPTION_field">
+                    <span id="sidDESCRIPTION" class="TEXT all__DESCRIPTION item__DESCRIPTION">申し訳ございません。アクセスする権限がないページを参照されているか、お探しのページが見つかりませんでした。<br />
+
+                    お手数をおかけしますが、画面下部の戻るボタンをクリックして前の画面に戻ってください。</span>
+
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div style="display:none;">
+      <fieldset id="PART_sidA_N01000" class="part part_box" style="padding-bottom:10px;">
+        <legend style="white-space:nowrap;">エラーの情報</legend>
+        <table width="100%">
+          <tr style="height:100%">
+            <td>
+              <table class="article" style="width:calc(100% - 20px); border-collapse: collapse; margin:10px 10px 0px 10px;">
+                <tr>
+                  <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; padding:5px; width:200px;">
+                    ステータスコード
+                  </td>
+                  <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; padding:5px;">
+                    404
+
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; padding:5px;">
+                    リクエスト
+                  </td>
+                  <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; padding:5px;">
+                    /faspub/page/opendatadownload.jsp
+
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; padding:5px;">
+                    エラー詳細
+                  </td>
+                  <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; padding:5px;">
+                    <a href="#" id="example-show" class="showDetil" onclick="changeDisplay('example');return false;">詳細を参照する</a>
+                    <a href="#" id="example-hide" class="hideDetil" onclick="changeDisplay('example');return false;" style="display:none;">詳細を閉じる</a>
+                  </td>
+                </tr>
+              </table>
+              <div id="example" style="display:none;">
+                <table class="article" style="width:calc(100% - 20px); border-collapse: collapse; margin:0px 10px 0px 10px;">
+                  <tr>
+                    <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; border-top:0px; padding:5px; width:200px;">
+                      エラー内容
+                    </td>
+                    <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; border-top:0px; padding:5px;">
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; padding:5px;">
+                      その他の情報
+                    </td>
+                    <td colspan="1" rowspan="1" valign="top" style="border: solid 1px #cccccc; padding:5px;word-break: break-all;word-wrap: break-word;">
+
+	<span id="error_detail">
+	<table>
+	<tr id="stacktrace"><td>
+	<pre>
+	申し訳ございません。アクセスする権限がないページを参照されているか、お探しのページが見つかりませんでした。
+	
+	</pre>
+	</td></tr>
+	</table>
+	</span>
+
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+    <br />
+    <div class="part part_line" id="PART_sidtext_context1"></div>
+    <br />
+    <table>
+      <tr>
+        <td>
+          <span class="action" title="" id="a_back_item" style="">
+
+
+            <input type="button" name="action_a_back" value="戻る" onclick="location.href='/faspub';" id="sidA_BACK" class="IoAction all__mainBtn01 item__mainBtn01" />
+
+          </span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="/faspub/script/_global_user.js?d=1724649249867" charset="UTF-8"></script>
+</section>
+<footer>
+  <hr>
+  <div class="footerMain">
+    <div class="footerMain__inner">
+      <div class="footerInfo">
+        <p class="footerInfo__logo">
+          <a href="https://www.mhlw.go.jp/" target="_blank"><img src="/faspub/image/mhlw_logo_foot.png" alt="厚生労働省"></a>
+        </p>
+        <p class="footerInfo__address">
+          <a href="https://www.mhlw.go.jp/" target="_blank"><span>厚生労働省（法人番号 6000012070001）<i title="厚生労働省" class="fa fa-clone" alt="厚生労働省"></i></span></a>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/kigu/index_00012.html" target="_blank"><span>食品衛生申請等システム&nbsp;<i title="食品衛生申請等システム" class="fa fa-clone" alt="食品衛生申請等システム"></i></span></a><br>
+          <a href="/about.htm#about" target="aboufas">             <span>・このサイトについて　　</span></a>&nbsp;&nbsp;
+          <a href="/termsofuse.htm#riyoukiyaku" target="aboufas">  <span>・利用規約</span></a>&nbsp;&nbsp;
+          <a href="/termsofuse.htm#menseki" target="aboufas">      <span>・免責事項・著作権</span></a>&nbsp;&nbsp;
+          <a href="/termsofuse.htm#privacy" target="aboufas">      <span>・プライバシーポリシー</span></a><br>
+          <a href="/termsofuse.htm#accessibility" target="aboufas"><span>・ウェブアクセシビリティ</span></a>&nbsp;&nbsp;
+          <a href="/termsofuse.htm#inquiry" target="aboufas">      <span>・御意見・問い合わせ</span></a><br>
+              Copyright © Ministry of Health, Labour and Welfare, All Rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="topBtn" id="topBtn">TOP</a>
+</footer>
+<div id="_statusbar" class="STATUSBAR" style="display: none"><span id="_statusbar-image"></span><span id="_statusbar-text"></span></div>
+<div></div>
+
+<script>
+expandMessage(true);
+
+var ctx = '/faspub';
+var errdetaildisp = false;
+var errdlgMsgBody = '例外が発生しました。';
+
+var errException = '例外が見つかりませんでした。';
+showErrorDialog(errdetaildisp, ctx, errdlgMsgBody, errException);
+</script>
+
+</body>
+</html>
