@@ -1,5 +1,7 @@
 # food-japan
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A program to download all CSV open data published on the [Food Sanitation Open](https://ifas.mhlw.go.jp/faspub/_link.do) of the Ministry of Health, Labor and Welfare, and an open data sample application.
 
 ## Sample Application
